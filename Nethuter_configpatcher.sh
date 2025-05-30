@@ -2,7 +2,7 @@
 
 # Configuration variables
 DEFCONFIG_NAME="your_defconfig_name"  # Change this to your defconfig name (without _defconfig suffix)
-CONFIGS_FILE="nethunter_configs"      # Change this to your configs file name
+CONFIGS_FILE="fixed_nethunter_configs"      # Change this to your configs file name
 ARM="arm64"                          # Change to "arm" for 32-bit ARM or "arm64" for 64-bit ARM
 
 # Colors for output

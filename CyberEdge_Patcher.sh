@@ -2,7 +2,7 @@
 
 # ==============================================
 # CyberEdge Kernel Patcher & Config Modifier
-# Enhanced Edition
+# NOT WORKING VERSION
 # ==============================================
 #
 # Features:

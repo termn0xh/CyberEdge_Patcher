@@ -2,28 +2,22 @@
 
 # ==============================================
 # CyberEdge Kernel Patcher & Config Modifier
-# NOT WORKING VERSION
-# ==============================================
+# NOT WORKING VERSION ==============================================
 #
-# Features:
-# - Fixed directory navigation issues
-# - Better error recovery
-# - Consistent patch management
-# - Improved version selection flow
 
-# =====================
-# CONFIGURATION
-# =====================
-DEFCONFIG_NAME="stone"          # Default defconfig name
-CONFIGS_FILE="nethunter_configs.txt"  # Config modifications file
-ARM="arm64"                     # Architecture: "arm" or "arm64"
-PATCH_DIR="patches"             # Directory containing kernel patches
-LOG_FILE="patcher.log"          # Log file path
-MAX_PATCH_PREVIEW_LINES=50      # Max lines to show in patch preview
+#=====================
+#    CONFIGURATION
+#=====================
+DEFCONFIG_NAME="stone"     
+CONFIGS_FILE="nethunter_configs.txt"
+ARM="arm64"    
+PATCH_DIR="patches"    
+LOG_FILE="patcher.log"        
+MAX_PATCH_PREVIEW_LINES=50     
 
-# =====================
-# COLOR DEFINITIONS
-# =====================
+#=====================
+#  COLOR DEFINITIONS
+#=====================
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -33,15 +27,15 @@ LMAGENTA='\033[1;35m'
 LCYAN='\033[1;36m'
 NC='\033[0m' # No Color
 
-# =====================
-# INITIALIZATION
-# =====================
+#======================
+#    INITIALIZATION
+#======================
 exec > >(tee -a "$LOG_FILE") 2>&1
 echo -e "\n=== $(date) - Script started ==="
 
-# =====================
-# FUNCTIONS
-# =====================
+#=====================
+#      FUNCTIONS
+#=====================
 
 log_info() { echo -e "${BLUE}[INFO]${NC} $1"; echo "[INFO] $1" >> "$LOG_FILE"; }
 log_success() { echo -e "${GREEN}[SUCCESS]${NC} $1"; echo "[SUCCESS] $1" >> "$LOG_FILE"; }
